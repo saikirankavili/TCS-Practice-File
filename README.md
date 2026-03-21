@@ -16,7 +16,8 @@ Ques-1. A parking lot charges vehicles based on the number of hours they are par
   Input: 8
   Output: 410
 
-Code:   
+Code: 
+
 a=int(input())
 a1=100
 a2=50
@@ -37,6 +38,7 @@ Ques-2. A gym offers membership plans based on the number of months a person sub
 - 12 months → ₹15000
 Write a program that takes the number of months (a) as input and prints the membership fee.
 If the input does not match any of the available plans, the program should print "Error".
+
 ---> Example 1:
 Input: 1
 Output: 2000
@@ -100,6 +102,7 @@ Input: 4
 Output: 7000
 
 code:
+
 a=int(input())
 if a <= 2:
     print(a*2000)
