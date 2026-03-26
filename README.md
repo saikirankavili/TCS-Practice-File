@@ -306,6 +306,7 @@ for i in a:
     for j in b:
         if i+j<Target:
             l.append(i+j)
+            l.sort()
 print("sandwitch cost Closet to Target is", l[-1])
 
 
