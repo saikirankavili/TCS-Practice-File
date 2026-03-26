@@ -153,6 +153,180 @@ else:
     print("Error")
 
 
+Ques-5: Problem Statement: Hot Air Balloon Ride Capacity
+A group of tourists is waiting to board a hot air balloon. Each tourist has a certain weight. The balloon has a maximum weight capacity, and once this limit is reached, no more passengers can be added.
+You are given:
+- A list of integers representing the weights of the tourists in the order they arrive.
+- An integer representing the maximum weight capacity of the balloon.
+Write a program to determine how many tourists can board the balloon before the maximum capacity is exceeded.
+Input Format:
+- First line: space-separated integers representing the weights of tourists.
+- Second line: an integer representing the maximum weight capacity of the balloon.
+Output Format:
+- Print the number of tourists who can successfully board the balloon.
+Example Input 1:
+40 50 60 30 20  
+150
+Output:
+4 
+
+Code:
+
+a=list(map(int,input().split()))
+Max_weight=int(input())
+a.sort()
+Total_weight=0
+count=0
+for p in a:
+    if Total_weight+p <= Max_weight:
+        Total_weight+=p
+        count+=1
+    else:
+        break
+print(count)
+
+
+Ques-6: Favorite Movie Position After Sorting
+You are given:
+An array of movie IDs (all unique)
+An integer K (1-based index)
+Task:
+Identify the movie at position K in the original array
+Sort the array in ascending order
+Find the new position (1-based index) of that movie after sorting
+Example Input 1: 
+4
+1 3 2 4
+2
+Output:
+2
+
+Example Input 2: 
+4
+1 3 2 4
+3
+Output:
+3
+
+Code:
+
+###### Method 1: { Using Dummy Element} ######
+
+s=int(input())
+p=[0]+list(map(int,input().split()))
+p.sort()
+print(p)
+k=int(input())
+print(p[k])
+
+###### Method 2: {Using Index Method} ######
+
+s=int(input())
+p=list(map(int,input().split()))
+p.sort()
+print(p)
+k=int(input())
+fav=p[k]
+print(p.index(fav))
+
+###### Method 2: {Using Find Method} ######
+
+s=int(input())
+p=list(map(int,input().split()))
+p.sort()
+print(p)
+k=int(input())
+fav=p[k]
+print(p.find(fav))
+
+
+Ques-7: Given 
+N=4:
+Arr[20.25,30,35]
+These are the prices of ticket in movie theater
+We have to find all odd prices
+and then output
+Sum of odd prices, count of odd prices and average of odd prices
+Example output:
+60  2  30.00
+
+question : ->>> A cinema hall sells tickets at different prices for different shows. The manager wants to analyze the ticket prices to find out:
+- The sum of all ticket prices that are odd numbers.
+- The count of how many odd-priced tickets exist.
+- The average of these odd ticket prices.
+Write a program that takes a list of ticket prices as input and calculates these three values.
+Example input:
+4
+[20,25,30,35]
+
+Example output:
+60  2  30.00
+where;
+sum=60
+count=2
+avg=30.00
+
+Code:
+
+a=list(map(int,input().split()))
+sum=0
+count=0
+avg=0
+for i in a:
+    if i%2!=0:
+        sum+=i
+        count+=1
+        avg=sum/2
+print(sum,count,f"{avg:.2f}")
+
+
+Ques-8: Problem Statement: Sandwich Cost Closest to Budget
+A café offers two lists of items:
+- List A contains the prices of different types of bread.
+- List B contains the prices of different fillings.
+A customer wants to buy a sandwich by combining one bread and one filling. The café has set a budget limit (Target), and the customer wants the sandwich whose cost is closest to but less than the Target.
+Write a program to:
+- Read two lists of integers representing bread and filling prices.
+- Read an integer Target representing the maximum budget.
+- Find all possible sandwich costs (bread + filling) that are strictly less than Target.
+- Print the sandwich cost that is closest to Target (i.e., the largest valid sum).
+- Example input: 10 20 30
+5 15
+40
+Example output:
+Sandwich cost closest to Target is 35
+
+Code: 
+
+a=list(map(int,input().split()))
+b=list(map(int,input().split()))
+Target=int(input())
+l=[]
+for i in a:
+    for j in b:
+        if i+j<Target:
+            l.append(i+j)
+print("sandwitch cost Closet to Target is", l[-1])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
