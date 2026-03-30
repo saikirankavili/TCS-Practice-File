@@ -310,6 +310,31 @@ for i in a:
 print("sandwitch cost Closet to Target is", l[-1])
 
 
+Ques-9: Write a Python program that takes a string as input and checks whether it is a palindrome.
+- Ignore case sensitivity (treat uppercase and lowercase letters as the same).
+- Consider only alphanumeric characters (ignore spaces, punctuation, and special symbols).
+- Print "yes" if the string is a palindrome, otherwise print "no".
+Example input1: Racecar
+Output: yes
+Example input2: hello
+output: no
+Example input3: a man a plan a canal panama
+output: yes {ignoring spaces and case}
+
+code:
+
+p=input("Enter a string:")
+s=""
+for ch in p:
+  if ch.isalnum():
+   s+=ch.lower()
+if s==s[::-1]:
+  print("yes")
+else:
+  print("no")
+
+  
+
 
 
 
