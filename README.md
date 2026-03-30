@@ -314,7 +314,7 @@ Ques-9: Write a Python program that takes a string as input and checks whether i
 - Ignore case sensitivity (treat uppercase and lowercase letters as the same).
 - Consider only alphanumeric characters (ignore spaces, punctuation, and special symbols).
 - Print "yes" if the string is a palindrome, otherwise print "no".
-Example input1: Racecar
+Example input1: Racecar           
 Output: yes
 Example input2: hello
 output: no
