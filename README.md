@@ -333,6 +333,39 @@ if s==s[::-1]:
 else:
   print("no")
 
+
+Ques-10: Write a program to find sum of the digits in a given number
+Example 1:
+    Input: 1234
+    Output: 10
+Example 2:
+    Input: 12345
+    Output: 15
+
+Code: 
+
+### Method - 1 ###
+
+p=int(input("enter a digit:"))
+sum=0
+for i in str(p):
+    sum+=int(i)
+print(sum)
+
+### Method - 2 ###
+
+p=input("enter a digit:")
+sum=0
+for i in p:
+    sum+=int(i)
+print(sum)
+
+
+
+
+
+  
+
   
 
 
