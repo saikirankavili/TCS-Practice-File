@@ -361,6 +361,67 @@ for i in p:
 print(sum)
 
 
+Ques-11: Write a Python program that:
+- Accepts the user’s total income.
+- Allows the user to enter multiple expenses (name and amount) until they type "done".
+- Calculates and displays the total income, total expenses, and total savings.
+- Prints an analysis showing each expense type with its corresponding amount.
+Your code is the solution to this problem. For example:
+- Input:
+Enter income: 1000
+Enter type of expense or 'done': Rent
+Enter price of expense: 300
+Enter type of expense or 'done': Food
+Enter price of expense: 200
+Enter type of expense or 'done': done
+- Output:
+Summary of Expenses:
+Total Income: 1000.0
+Total Expenses: 500.0
+Total Savings: 500.0
+
+Analysis:
+Rent: 300.0
+Food: 200.0
+
+Code:
+
+### Method-1 Beginner Level ###
+
+p1=float(input("enter income:"))
+p2=input("enter type of expense or done:")
+p3=float(input("enter price if expense:"))
+p4=input("enter type of expense or done:")
+p5=float(input("enter price if expense:"))
+print("Summary of Expenses:")
+print(f'Total Income:{p1}')
+print(f'Total Expenses:{p3+p5}')
+print(f'Total Savings: {p1-(p3+p5)}')
+print("Analysis:")
+print(f'{p2}:{p3}')
+print(f'{p4}:{p5}')
+
+### Method-2 Advanced Level ###
+
+income = float(input("Enter income: "))
+expenses = {}  
+while True:
+    expense_type = input("Enter type of expense or 'done': ")
+    if expense_type == "done" or expense_type == "Done":
+        break
+    price = float(input("Enter price of expense: "))
+    expenses[expense_type] = price
+    
+print("\nSummary of Expenses:")
+print(f"Total Income: {income}")
+total_expenses = sum(expenses.values())
+print(f"Total Expenses: {total_expenses}")
+print(f"Total Savings: {income - total_expenses}")
+
+print("\nAnalysis:")
+for exp, amt in expenses.items():
+    print(f"{exp}: {amt}")
+
 
 
 
