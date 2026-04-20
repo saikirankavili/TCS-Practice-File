@@ -422,6 +422,7 @@ print("\nAnalysis:")
 for exp, amt in expenses.items():
     print(f"{exp}: {amt}")
 
+
 Ques-12: Remove Duplicates and Print in Reverse
 Problem Statement: You are given an array of integers. Your task is to remove all duplicate elements while preserving the order of their first occurrence, and then print the resulting array in reverse order.
 
@@ -463,6 +464,7 @@ for i in s:
     seen.add(i)
     k.append(i)
 print(*k[::-1])
+
   
 Ques-13: Calculate Speed
 Problem Statement: You are tasked with writing a program that calculates the speed of an object given the distance traveled and the time taken. The time will be provided in minutes, and you must convert it into hours before computing the speed. If the input time is not within the valid range (1 to 60 minutes), the program should output an error message.
@@ -508,6 +510,7 @@ if s>=1 and s<=60:
 else:
     print("error")
 
+
 Ques-14: Eligible Laptops for Meeting
 Problem Statement: A company is organizing an online meeting and wants to ensure that only laptops with sufficient specifications are eligible to join. Each laptop has a performance score, and the company sets a minimum required score 
 𝑘.Your task is to determine how many laptops meet or exceed this requirement.
@@ -542,12 +545,116 @@ for i in p:
 print(count)
 
 
+Ques-15: Sum of Integers in a Range
+Problem Statement: You are tasked with writing a program that calculates the sum of all integers between two given numbers 𝑚 and 𝑛, inclusive. The program should read the two integers and output the total sum of all numbers from 𝑚 to 𝑛.
+
+Input Format
+A single line containing two integers 𝑚 and 𝑛, separated by a space.
+
+Output Format
+Print the sum of all integers from 𝑚 to 𝑛 (inclusive).
+
+Example 1:
+Input:
+3 6
+Output:
+18
+
+Example 2:
+Input:
+0 3
+Output:
+6
+
+Code:::
+
+m,n=map(int,input().split())
+sum=0
+for i in range(m,n+1):
+    sum+=i
+print(sum)
 
 
+Ques-16: Sum of Cubes in a Range
+Problem Statement: Write a program that calculates the sum of cubes of all integers between two given numbers 𝑝 and 𝑠, inclusive. The program should read the two integers and output the total sum of their cubes.
+
+Input Format
+A single line containing two integers 𝑝 and 𝑠, separated by a space.
+
+Output Format
+Print the sum of cubes of all integers from 𝑝 to 𝑠 (inclusive).
+
+Example :
+Input:
+p=4
+s=9
+Output:
+1989
+
+Code:::
+
+p,s=map(int,input().split())
+sum=0
+for i in range(p,s+1):
+    sum+=i*i*i
+print(sum)
 
 
+Ques-17: Find the Second Largest Character
+Problem Statement: You are tasked with writing a program that finds the second largest character (in lexicographical order) from a given string. The program should read the length of the string and the string itself, sort the characters, and then output the second largest character.
+
+Input Format
+The first line contains an integer 𝑝, representing the length of the string.
+The second line contains the string 𝑠.
+
+Output Format
+Print the second largest character in the string.
+
+Example:
+Input:
+5
+3 7 2 5 9
+Output:
+7
+
+Code:::
+
+Type 1:--->
+
+p=int(input())
+s=list(input())
+s.sort()
+print(s[-2])
+
+Type 2:--->
+
+p=int(input())
+s=list(map(int,input().split()))
+s.sort()
+print(s[-2])
 
 
+Ques-18: Reverse the Digits of an Integer
+Problem Statement: Write a program that takes an integer as input and prints the integer obtained by reversing its digits. Leading zeros in the reversed number should be ignored (i.e., the output must be a valid integer).
+
+Input Format
+A single integer 𝑝.
+Output Format
+Print the integer formed by reversing the digits of 𝑝.
+
+Example 1:
+Input: 12345
+Output: 54321
+
+Example 2:
+Input: -689
+Output: -986
+
+Code:::
+
+p=int(input())
+rev=str(p)[::-1]
+print(int(rev))
 
 
 
