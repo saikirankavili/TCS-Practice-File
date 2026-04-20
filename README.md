@@ -426,11 +426,9 @@ Ques-12: Remove Duplicates and Print in Reverse
 Problem Statement: You are given an array of integers. Your task is to remove all duplicate elements while preserving the order of their first occurrence, and then print the resulting array in reverse order.
 
 Input Format
-The first line contains an integer 
-𝑛, the length of the array.
+The first line contains an integer 𝑛, the length of the array.
 
-The second line contains 
-𝑛, space‑separated integers representing the array elements.
+The second line contains 𝑛, space‑separated integers representing the array elements.
 
 Output Format
 Print the modified array (with duplicates removed) in reverse order, with elements separated by spaces.
@@ -466,11 +464,82 @@ for i in s:
     k.append(i)
 print(*k[::-1])
   
+Ques-13: Calculate Speed
+Problem Statement: You are tasked with writing a program that calculates the speed of an object given the distance traveled and the time taken. The time will be provided in minutes, and you must convert it into hours before computing the speed. If the input time is not within the valid range (1 to 60 minutes), the program should output an error message.
 
+Input Format:
+The first line contains an integer 𝑑, representing the distance traveled (in kilometers).
 
-  
+The second line contains an integer 𝑡, representing the time taken (in minutes).
 
-  
+Output Format:
+Print the calculated speed (in kilometers per hour).
+
+If the time is invalid, print "error".
+
+Example:
+Input:
+Distance:30km
+Speed:30min
+Output:
+60
+Explanation:
+Time in hrs: 30/60=0.5
+Speed: 30/0.5=60kmph
+
+code:::
+
+Approach-1:--->
+
+p=int(input("Enter the distance:"))
+s=int(input("Enter the time:"))
+if s>=1 and s<=60:
+    print(int(p*60)/s)
+else:
+    print("error")
+
+Approach-2:--->
+
+p=int(input("Enter the distance:"))
+s=int(input("Enter the time:"))
+if s>=1 and s<=60:
+  k=s/60 
+  print(p/k)
+else:
+    print("error")
+
+Ques-14: Eligible Laptops for Meeting
+Problem Statement: A company is organizing an online meeting and wants to ensure that only laptops with sufficient specifications are eligible to join. Each laptop has a performance score, and the company sets a minimum required score 
+𝑘.Your task is to determine how many laptops meet or exceed this requirement.
+
+Input Format
+The first line contains an integer 𝑛, representing the number of laptops.
+
+The second line contains 𝑛, space‑separated integers, each representing the performance score of a laptop.
+
+The third line contains an integer 𝑘, the minimum required score for eligibility.
+
+Output Format
+Print the number of laptops whose performance score is greater than or equal to 𝑘.
+
+  Example:
+  Input:
+  5
+  20 30 50 60 70
+  50
+  Output:
+  3
+
+  Code:::
+
+s=int(input("Enter the range: "))
+p=list(map(int,input().split()))
+k=int(input())
+count=0
+for i in p:
+    if i>=k:
+        count+=1
+print(count)
 
 
 
