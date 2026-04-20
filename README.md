@@ -422,7 +422,50 @@ print("\nAnalysis:")
 for exp, amt in expenses.items():
     print(f"{exp}: {amt}")
 
+Ques-12: Remove Duplicates and Print in Reverse
+Problem Statement: You are given an array of integers. Your task is to remove all duplicate elements while preserving the order of their first occurrence, and then print the resulting array in reverse order.
 
+Input Format
+The first line contains an integer 
+𝑛, the length of the array.
+
+The second line contains 
+𝑛, space‑separated integers representing the array elements.
+
+Output Format
+Print the modified array (with duplicates removed) in reverse order, with elements separated by spaces.
+
+Example :
+Input:
+7
+1 2 3 4 2 5 6
+Output:
+5 4 3 2 1
+
+Code:::
+
+Method : 1--->>> Time Complexity o(n^2)
+
+p=int(input("Enter the Length of array:"))
+s=list(map(int,input().split()))
+k=[]
+for i in s:
+  if i not in k:
+    k.append(i)
+print(*k[::-1])
+
+Method : 2--->>> Time Complexity o(n)
+
+p=int(input("Enter the Length of array:"))
+s=list(map(int,input().split()))
+k=[]
+seen = set()
+for i in s:
+  if i not in seen:
+    seen.add(i)
+    k.append(i)
+print(*k[::-1])
+  
 
 
   
