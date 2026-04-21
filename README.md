@@ -656,19 +656,196 @@ p=int(input())
 rev=str(p)[::-1]
 print(int(rev))
 
+  ###### try Except Method (Exception Handling) Concept ######
+
+Exception: It is an event that interupts the flow of program.
+In this we have 1. Try
+                2. Except
+                3. Finally
+In this we have different type of errors :- 1. ValueError
+                                            2. ZeroDivisionError
+                                            3. TypeError
+Syntax:
+      try:
+      # try some code
+      excpet exception:
+      # handle the exception
+      finally:
+      # do some clean up
+
+Example Code 1: (Parking lot Problem)
+
+try:
+    a = int(input("Enter hours: "))
+except ValueError:
+    print("Invalid input")
+else:
+    if a < 0:
+        print("Hours cannot be negative")
+    elif a <= 2:
+        print(a * 100)
+    elif a <= 5:
+        print(2 * 100 + (a - 2) * 50)
+    else:
+        print(2 * 100 + 3 * 50 + (a - 5) * 20)
+
+Example 1:
+Input:
+Enter Hours: 5
+Output:
+350
+
+Example 2:
+Input:
+Enter the number: pavanisai
+Output:
+Invalid input
+
+Example Code 2: (sum of the digits of a number)
+
+try:
+    p=int(input("Enter the number: "))
+    sum=0
+    for i in str(p):
+      sum+=int(i)
+    print(sum)
+except ValueError:
+    print("Invalid input")
+
+Example 1:
+Input:
+Enter the number: 12345
+Output:
+15
+
+Example 2:
+Input:
+Enter the number: sai.pancake
+Output:
+Invalid input
+
+
+Ques-19: Count Even and Odd Digits in an Integer
+Problem Statement: Write a program that reads an integer input and determines how many of its digits are even and how many are odd.
+If the input is not a valid integer, the program should display "Invalid Input".
+
+Input Format
+A single integer 𝑝.
+
+Output Format
+Print two lines:
+"count of even numbers is: X"
+"count of odd numbers is: Y"  
+Where 
+𝑋 is the number of even digits and 
+𝑌 is the number of odd digits.
+
+Example 1:
+Input:
+123456
+Output:
+count of even numbers is: 3
+count of odd numbers is: 3
+
+Example 2:
+Input:
+sai.ps
+Output:
+Invalid Input
+
+Code::: 
+
+try:
+    p=int(input("Enter the number: "))
+    even=odd=0
+    for i in str(p):
+        if int(i)%2==0:
+         even+=1
+        else:
+         odd+=1
+    print("count of even numbers is:",even)
+    print("count of odd numbers is:",odd)
+except:
+    print("Invalid Input")
+
+
+Ques-20: Factorial of a given number (or) product of digits in a number
+Problem Statement: Write a program that reads an integer input and calculates the product of all its digits.
+If the input is not a valid integer, the program should display "Invalid Input".
+If the input is 0, the program should display "can't define factorial".
+
+Input Format
+A single integer 𝑝.
+Output Format
+Print the product of all digits in 𝑝.
+Or print the appropriate error message if the input is invalid or equal to zero.
+
+Example:
+Input:
+234
+Output:
+24
+
+Code:::
+
+try:
+    p=int(input("Enter the number: "))
+    fact=1
+    if p==0:
+        print("can't define factorial")
+    else:
+        for i in str(p):
+            fact*=int(i)
+    print(fact)
+except:
+    print("Invalid Input")
+
+
+Ques-21: Check if a Number is an Armstrong Number
+Problem statement: An Armstrong number of 𝑛 digits is a number such that the sum of its digits raised to the power 𝑛 is equal to the number itself.
+Write a program to check whether a given integer is an Armstrong number.
+If the input is not a valid integer, display:  "ERROR"
+
+Input Format
+A single integer 𝑝.
+Output Format
+Print the sum of each digit raised to the power of the number of digits.
+Then print whether the number is an Armstrong number or not.
+If the input is invalid, print the error message.
+
+Sample Test Case 1  
+Input:
+153
+Output:
+153
+153 is Armstrong number
+
+Sample Test Case 2  
+Input:
+123
+Output:
+36
+Not an Armstrong
+
+Code:::
+
+try:    
+    p=int(input("Enter a number: "))        
+    temp=p
+    sum=0
+    digits=len(str(p))
+    for i in str(p):
+        sum+=int(i)**digits
+    print(sum)
+    if sum==p:
+        print(sum,"is Armstrong number")
+    else:
+        print("Not an Armstrong")
+except:
+    print("ERROR.Enter a Valid Input")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+      
 
 
