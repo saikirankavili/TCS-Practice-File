@@ -624,7 +624,7 @@ Type 1:--->
 p=int(input())
 s=list(input())
 s.sort()
-print(s[-2])
+print(s[-2])    { Here we can use join fuction in order to remove spaces }  ie.Used as """print("".join(s))"""
 
 Type 2:--->
 
