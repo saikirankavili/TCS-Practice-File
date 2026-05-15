@@ -845,6 +845,58 @@ except:
     print("ERROR.Enter a Valid Input")
 
 
-      
+Ques-22: Problem Statement: Nth Prime Finder
+You are given a positive integer N. Your task is to determine the Nth prime number.
+A prime number is defined as a number greater than 1 that has exactly two divisors: 1 and itself.
+
+Input Format
+A single integer N (1 ≤ N ≤ 1000).
+
+Output Format
+Print the Nth prime number.
+
+
+code:::
+
+s=int(input())
+count=0
+num=2
+while True:
+    divisor_count=0
+    for p in range(1,num+1):
+        if num%p==0:
+            divisor_count+=1
+    if divisor_count==2:
+        count+=1
+    if count==s:       
+        print(num,"is the",s,"th prime number")
+        break
+    num+=1
+
+
+Ques-23:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
