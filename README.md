@@ -214,18 +214,16 @@ Code:
 
 s=int(input())
 p=[0]+list(map(int,input().split()))
-p.sort()
-print(p)
 k=int(input())
+p.sort()
 print(p[k])
 
 ###### Method 2: {Using Index Method} ######
 
 s=int(input())
 p=list(map(int,input().split()))
-p.sort()
-print(p)
 k=int(input())
+p.sort()
 fav=p[k]
 print(p.index(fav))
 
@@ -233,9 +231,8 @@ print(p.index(fav))
 
 s=int(input())
 p=list(map(int,input().split()))
-p.sort()
-print(p)
 k=int(input())
+p.sort()
 fav=p[k]
 print(p.find(fav))
 
