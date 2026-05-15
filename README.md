@@ -128,7 +128,7 @@ Ques-4: A shop offers discounts on purchases based on the total bill amount. The
 - If the purchase amount is greater than 1000 and less than 5000, the customer gets a 10% discount.
 - If the purchase amount is greater than 5000, the customer gets a 15% discount.
 - For any other input (like negative values ), the program should print "Error".
-Write a program that takes the purchase amount (p) as input and prints the final amount after discount.
+ Write a program that takes the purchase amount (p) as input and prints the final amount after discount.
 
 Examples:
 Input: 500
@@ -143,9 +143,9 @@ Output: Error
 code: 
 
 p=int(input())
-if p==0 and p<1000:
+if p>=0 and p<1000:
     print(p-p*5/100)
-elif p>1000 and p<5000:
+elif p>=1000 and p<5000:
     print(p-p*10/100)
 elif p>5000:
     print(p-p*15/100)
