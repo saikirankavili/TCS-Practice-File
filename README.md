@@ -147,7 +147,7 @@ if p>=0 and p<1000:
     print(p-p*5/100)
 elif p>=1000 and p<5000:
     print(p-p*10/100)
-elif p>5000:
+elif p>=5000:
     print(p-p*15/100)
 else:
     print("Error")
