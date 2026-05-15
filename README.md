@@ -247,7 +247,8 @@ Sum of odd prices, count of odd prices and average of odd prices
 Example output:
 60  2  30.00
 
-question : ->>> A cinema hall sells tickets at different prices for different shows. The manager wants to analyze the ticket prices to find out:
+question : ->>> A cinema hall sells tickets at different prices for different shows. 
+The manager wants to analyze the ticket prices to find out:
 - The sum of all ticket prices that are odd numbers.
 - The count of how many odd-priced tickets exist.
 - The average of these odd ticket prices.
@@ -436,7 +437,7 @@ Input:
 7
 1 2 3 4 2 5 6
 Output:
-5 4 3 2 1
+6 5 4 3 2 1
 
 Code:::
 
@@ -672,6 +673,18 @@ Syntax:
 
 Example Code 1: (Parking lot Problem)
 
+Example 1:
+Input:
+Enter Hours: 5
+Output:
+350
+
+Example 2:
+Input:
+Enter the number: -7
+Output:
+Invalid input
+
 try:
     a = int(input("Enter hours: "))
 except ValueError:
@@ -685,29 +698,9 @@ else:
         print(2 * 100 + (a - 2) * 50)
     else:
         print(2 * 100 + 3 * 50 + (a - 5) * 20)
-
-Example 1:
-Input:
-Enter Hours: 5
-Output:
-350
-
-Example 2:
-Input:
-Enter the number: pavanisai
-Output:
-Invalid input
+        
 
 Example Code 2: (sum of the digits of a number)
-
-try:
-    p=int(input("Enter the number: "))
-    sum=0
-    for i in str(p):
-      sum+=int(i)
-    print(sum)
-except ValueError:
-    print("Invalid input")
 
 Example 1:
 Input:
@@ -720,6 +713,19 @@ Input:
 Enter the number: sai.pancake
 Output:
 Invalid input
+
+
+Code:::
+
+try:
+    p=int(input("Enter the number: "))
+    sum=0
+    for i in str(p):
+      sum+=int(i)
+    print(sum)
+except ValueError:
+    print("Invalid input")
+
 
 
 Ques-19: Count Even and Odd Digits in an Integer
@@ -828,7 +834,6 @@ Code:::
 
 try:    
     p=int(input("Enter a number: "))        
-    temp=p
     sum=0
     digits=len(str(p))
     for i in str(p):
