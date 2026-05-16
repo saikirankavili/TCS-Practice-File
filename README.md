@@ -30,6 +30,7 @@ else:
     print(2*a1+3*a2+(a-5)*a3)
 
 
+
 Ques-2. A gym offers membership plans based on the number of months a person subscribes. The charges are fixed for certain durations:
 - 1 month → ₹2000
 - 3 months → ₹5000
@@ -74,6 +75,8 @@ elif a==12:
     print("15000")
 else:
     print("Error")
+
+
 
 Ques-3: A gym offers membership plans with different pricing rules depending on the number of months a customer subscribes. The charges are structured as follows:
 - For up to 2 months, the cost is ₹2000 per month.
@@ -123,6 +126,8 @@ elif a == 12:
 else:
     print("Invalid Input")
 
+
+
 Ques-4: A shop offers discounts on purchases based on the total bill amount. The discount rules are:
 - If the purchase amount is greater than 0 and less than 1000, the customer gets a 5% discount.
 - If the purchase amount is greater than 1000 and less than 5000, the customer gets a 10% discount.
@@ -151,6 +156,7 @@ elif p>=5000:
     print(p-p*15/100)
 else:
     print("Error")
+
 
 
 Ques-5: Problem Statement: Hot Air Balloon Ride Capacity
@@ -184,6 +190,7 @@ for p in a:
     else:
         break
 print(count)
+
 
 
 Ques-6: Favorite Movie Position After Sorting
@@ -237,6 +244,7 @@ fav=p[k]
 print(p.find(fav))
 
 
+
 Ques-7: Given 
 N=4:
 Arr[20.25,30,35]
@@ -278,6 +286,7 @@ for i in a:
 print(sum,count,f"{avg:.2f}")
 
 
+
 Ques-8: Problem Statement: Sandwich Cost Closest to Budget
 A café offers two lists of items:
 - List A contains the prices of different types of bread.
@@ -306,6 +315,8 @@ for i in a:
             l.append(i+j)
             l.sort()
 print("sandwitch cost Closet to Target is", l[-1])
+
+
 
 
 Ques-9: Write a Python program that takes a string as input and checks whether it is a palindrome.
@@ -357,6 +368,8 @@ sum=0
 for i in p:
     sum+=int(i)
 print(sum)
+
+
 
 
 Ques-11: Write a Python program that:
@@ -421,6 +434,8 @@ for exp, amt in expenses.items():
     print(f"{exp}: {amt}")
 
 
+
+
 Ques-12: Remove Duplicates and Print in Reverse
 Problem Statement: You are given an array of integers. Your task is to remove all duplicate elements while preserving the order of their first occurrence, and then print the resulting array in reverse order.
 
@@ -463,7 +478,9 @@ for i in s:
     k.append(i)
 print(*k[::-1])
 
-  
+
+
+
 Ques-13: Calculate Speed
 Problem Statement: You are tasked with writing a program that calculates the speed of an object given the distance traveled and the time taken. The time will be provided in minutes, and you must convert it into hours before computing the speed. If the input time is not within the valid range (1 to 60 minutes), the program should output an error message.
 
@@ -509,6 +526,7 @@ else:
     print("error")
 
 
+
 Ques-14: Eligible Laptops for Meeting
 Problem Statement: A company is organizing an online meeting and wants to ensure that only laptops with sufficient specifications are eligible to join. Each laptop has a performance score, and the company sets a minimum required score 
 𝑘.Your task is to determine how many laptops meet or exceed this requirement.
@@ -543,6 +561,7 @@ for i in p:
 print(count)
 
 
+
 Ques-15: Sum of Integers in a Range
 Problem Statement: You are tasked with writing a program that calculates the sum of all integers between two given numbers 𝑚 and 𝑛, inclusive. The program should read the two integers and output the total sum of all numbers from 𝑚 to 𝑛.
 
@@ -573,6 +592,7 @@ for i in range(m,n+1):
 print(sum)
 
 
+
 Ques-16: Sum of Cubes in a Range
 Problem Statement: Write a program that calculates the sum of cubes of all integers between two given numbers 𝑝 and 𝑠, inclusive. The program should read the two integers and output the total sum of their cubes.
 
@@ -596,6 +616,7 @@ sum=0
 for i in range(p,s+1):
     sum+=i*i*i
 print(sum)
+
 
 
 Ques-17: Find the Second Largest Character
@@ -630,6 +651,7 @@ p=int(input())
 s=list(map(int,input().split()))
 s.sort()
 print(s[-2])
+
 
 
 Ques-18: Reverse the Digits of an Integer
@@ -728,6 +750,7 @@ except ValueError:
 
 
 
+
 Ques-19: Count Even and Odd Digits in an Integer
 Problem Statement: Write a program that reads an integer input and determines how many of its digits are even and how many are odd.
 If the input is not a valid integer, the program should display "Invalid Input".
@@ -772,6 +795,8 @@ except:
     print("Invalid Input")
 
 
+
+
 Ques-20: Factorial of a given number (or) product of digits in a number
 Problem Statement: Write a program that reads an integer input and calculates the product of all its digits.
 If the input is not a valid integer, the program should display "Invalid Input".
@@ -802,6 +827,8 @@ try:
     print(fact)
 except:
     print("Invalid Input")
+
+
 
 
 Ques-21: Check if a Number is an Armstrong Number
@@ -847,6 +874,8 @@ except:
     print("ERROR.Enter a Valid Input")
 
 
+
+
 Ques-22: Problem Statement: Nth Prime Finder
 You are given a positive integer N. Your task is to determine the Nth prime number.
 A prime number is defined as a number greater than 1 that has exactly two divisors: 1 and itself.
@@ -874,6 +903,8 @@ while True:
         print(num,"is the",s,"th prime number")
         break
     num+=1
+
+
 
 
 Ques-23:  Finding the missings Elements in an array
@@ -909,6 +940,8 @@ unique=set(arr)
 print("unique elements are: ",end=" ")
 for i in unique:
     print(i,end=" ")
+
+
 
 
 Ques-25: There are n employees in a company, numbered from 0 to n - 1. Each employee i has worked for hours[i] hours in the company.
@@ -966,6 +999,8 @@ When you process a new character k, you add it to the set using "seen.add(k)".
 Next time you encounter the same character, the condition if k in seen: will be True, meaning this character has appeared before.
 
 
+
+
 Ques-27: Special Array I
 
 An array is considered special if the parity of every pair of adjacent elements is different. In other words, one element in each pair must be even, and the other must be odd.
@@ -1016,6 +1051,93 @@ for p in range(len(nums)-1):
 else:
     print("True")
     
+
+
+
+Ques-28: Find the index of 1st occurence in a string 
+Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+
+ 
+Example 1:
+
+Input: haystack = "sadbutsad", needle = "sad"
+Output: 0
+Explanation: "sad" occurs at index 0 and 6.
+The first occurrence is at index 0, so we return 0.
+
+
+code::: 
+Method 1:
+
+p=input("Enter the string1: ")
+s=input("Enter the string2: ")
+if s in p:
+    print(p.index(s))
+else:
+    print("-1")
+
+method 2: 
+
+p=input("Enter the string1: ")
+s=input("Enter the string2: ")
+print(p.find(s))
+
+
+
+Ques-29: Length of Last Word
+Given a string s consisting of words and spaces, return the length of the last word in the string.
+
+A word is a maximal substring consisting of non-space characters only.
+
+Example 1:
+
+Input: s = "Hello World"
+Output: 5
+Explanation: The last word is "World" with length 5.
+Example 2:
+
+Input: s = "   fly me   to   the moon  "
+Output: 4
+Explanation: The last word is "moon" with length 4.
+
+
+code::
+
+p=input("Enter the string: ")
+print(len(p.split()[-1]))
+
+
+
+Ques-30: Add plus one 
+You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's.
+
+Increment the large integer by one and return the resulting array of digits. 
+
+Example 1:
+
+Input: digits = [1,2,3]
+Output: [1,2,4]
+Explanation: The array represents the integer 123.
+Incrementing by one gives 123 + 1 = 124.
+Thus, the result should be [1,2,4].
+Example 2:
+
+Input: digits = [4,3,2,1]
+Output: [4,3,2,2]
+Explanation: The array represents the integer 4321.
+Incrementing by one gives 4321 + 1 = 4322.
+Thus, the result should be [4,3,2,2].
+Example 3:
+
+
+code:::
+
+p=list(map(int,input("Enter the elements: ").split()))
+p[-1]=p[-1]+1
+print(p)
+
+
+
 
 
 
