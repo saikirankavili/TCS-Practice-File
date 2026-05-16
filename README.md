@@ -876,11 +876,146 @@ while True:
     num+=1
 
 
-Ques-23:  
+Ques-23:  Finding the missings Elements in an array
+
+input: 1 2 4 7 10
+output: 3 5 6 8 9 
+
+code:::
+
+arr=list(map(int,input("enter the list: ").split()))
+n=10
+print("missing numbers are:",end=" ")
+for i in range(1,n+1):
+    if i not in arr:
+        print(i,end=" ")
+
+Ques-24: Remove duplicate elements in an array
+
+input: 1 1 2 3 5 6 8 6 9 
+ouput: 1 2 3 5 6 8 9 
+
+code:: 
+method 1: 
+
+arr=list(map(int,input("enter the array: ").split()))
+unique=set(arr)
+print("unique elements are: ",unique)                    --->>   Note::: set will remove all the duplicate or repeated elements from the array. and output will be printed in the form of set with {}   <<---
+
+method 2:
+
+arr=list(map(int,input(" enter the array: ").split()))
+unique=set(arr)
+print("unique elements are: ",end=" ")
+for i in unique:
+    print(i,end=" ")
 
 
+Ques-25: There are n employees in a company, numbered from 0 to n - 1. Each employee i has worked for hours[i] hours in the company.
+
+The company requires each employee to work for at least target hours.
+
+You are given a 0-indexed array of non-negative integers hours of length n and a non-negative integer target.
+
+Return the integer denoting the number of employees who worked at least target hours.
+
+ 
+
+Example 1:
+
+Input: hours = [0,1,2,3,4], target = 2
+Output: 3
+Explanation: The company wants each employee to work for at least 2 hours.
+- Employee 0 worked for 0 hours and didn't meet the target.
+- Employee 1 worked for 1 hours and didn't meet the target.
+- Employee 2 worked for 2 hours and met the target.
+- Employee 3 worked for 3 hours and met the target.
+- Employee 4 worked for 4 hours and met the target.
+There are 3 employees who met the target.
 
 
+code:::
+
+arr=list(map(int,input("enter the elements: ").split()))
+target=int(input("enter the target: ").strip())
+count=0
+for p in arr:
+    if p >= target:
+        count+=1
+print(count)
+
+Ques-26: First Letter to Appear Twice
+
+Input: s = "abccbaacz"
+Output: "c"
+
+code:::
+
+s=input("enter the string: ")
+seen=set()
+for k in s:
+    if k in seen:
+        print(k)
+        break
+    seen.add(k)
+
+Note:::->>> "seen" is a set that keeps track of all characters you’ve already encountered while looping through the string.
+
+When you process a new character k, you add it to the set using "seen.add(k)".
+
+Next time you encounter the same character, the condition if k in seen: will be True, meaning this character has appeared before.
+
+
+Ques-27: Special Array I
+
+An array is considered special if the parity of every pair of adjacent elements is different. In other words, one element in each pair must be even, and the other must be odd.
+
+You are given an array of integers nums. Return true if nums is a special array, otherwise, return false.
+
+ 
+
+Example 1:
+
+Input: nums = [1]
+
+Output: true
+
+Explanation:
+
+There is only one element. So the answer is true.
+
+Example 2:
+
+Input: nums = [2,1,4]
+
+Output: true
+
+Explanation:
+
+There is only two pairs: (2,1) and (1,4), and both of them contain numbers with different parity. So the answer is true.
+
+Example 3:
+
+Input: nums = [4,3,1,6]
+
+Output: false
+
+Explanation:
+
+nums[1] and nums[2] are both odd. So the answer is false.
+
+
+Code:::
+
+
+nums=list(map(int,input("enter the elements: ").split()))
+for p in range(len(nums)-1):
+    if nums[p]%2==nums[p+1]%2:
+        print("False") 
+        break
+else:
+    print("True")
+    
 
 
 
