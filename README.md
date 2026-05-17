@@ -921,6 +921,8 @@ for i in range(1,n+1):
     if i not in arr:
         print(i,end=" ")
 
+
+
 Ques-24: Remove duplicate elements in an array
 
 input: 1 1 2 3 5 6 8 6 9 
