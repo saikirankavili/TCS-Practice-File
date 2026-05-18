@@ -1193,7 +1193,43 @@ else:
 
 
 
-Ques-34: 
+Ques-34: Find Element Occuring only once in lis
+
+code:::
+
+Method 1: 
+
+p=list(map(int,input("Enter the elements: ").split()))
+freq={}
+for s in p:
+    if s in freq:
+        freq[s]+=1
+    else:
+        freq[s]=1
+for key, value in freq.items():
+    if value == 1:
+        print(key)
+
+Method 2:   {{{ EASY WAY USING FUNCTINS }}}
+
+p=list(map(int,input("Enter the elements: ").split()))          
+for s in p:
+    if p.count(s)==1:
+        print(s)
+
+
+
+Ques-35: Rotate Array by K position
+
+Input: 1 2 3 4 
+k = 2
+Output: 3 4 2 1 
+
+code:::
+
+p=list(map(int,input("Enter the Array of Elements: ").split()))
+k=int(input("Enter the digit"))
+print(p[-k:]+p[:-k])  
 
 
 
