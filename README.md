@@ -1134,8 +1134,14 @@ Example 3:
 
 code:::
 
+[ ### p=list(map(int,input("Enter the elements: ").split()))
+### p[-1]=p[-1]+1
+### print(p) ]
+
 p=list(map(int,input("Enter the elements: ").split()))
-p[-1]=p[-1]+1
+s="".join(map(str,p))
+k=str(int(s)+1)
+p=list(k)
 print(p)
 
 
@@ -1173,6 +1179,7 @@ for k in p:
 print(s+zero)
 
 
+
 Ques-33: Linear Search in Array
 
 Code:::
@@ -1184,6 +1191,9 @@ if key in s:
 else:
     print("Not Found")
 
+
+
+Ques-34: 
 
 
 
