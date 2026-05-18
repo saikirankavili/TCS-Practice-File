@@ -1140,7 +1140,49 @@ print(p)
 
 
 
+Ques-31: Find maximum and minimum from an array
 
+code:::
+Method 1:
+
+p=list(map(int,input("Enter the elements: ").split()))
+print(max(p))
+print(min(p))
+
+Method 2:
+
+p=list(map(int,input("Enter the elements: ").split()))
+p.sort()
+print("Maximum number is: ", p[-1])
+print("Minimum number is: ", p[0])
+
+
+
+Ques-32: Move all zeroes to end of the array
+
+Code:::
+
+p=list(map(int,input("Enter the elements: ").split()))
+s=[]
+zero=[]
+for k in p:
+    if k == 0:
+        zero.append(k)
+    else:
+        s.append(k)
+print(s+zero)
+
+
+Ques-33: Linear Search in Array
+
+Code:::
+
+s=list(map(int,input("Enter the elements: ").split()))
+key=int(input())
+if key in s:
+    print("Found")
+else:
+    print("Not Found")
 
 
 
